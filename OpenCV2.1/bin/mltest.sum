@@ -1,0 +1,84 @@
+Engine: CxTest 0.1
+Execution Date & Time: 10/31/16 13:24:05
+Config File: (null)
+Tested Libraries: cxcore: 2.1.0
+Optimized Low-level Plugin's: 
+=================================================
+-------------------------------------------------
+[000000009b677bb7]
+aboost: 	FAIL(Invalid test data)
+>>>
+validation file is not determined or not correctcontext: test case = -1, seed = 000000009b677bb7
+
+-------------------------------------------------
+[000000009b677bb7]
+adtree: 	FAIL(Invalid test data)
+>>>
+validation file is not determined or not correctcontext: test case = -1, seed = 000000009b677bb7
+
+-------------------------------------------------
+[000000009b677bb7]
+aertrees: 	FAIL(Invalid test data)
+>>>
+validation file is not determined or not correctcontext: test case = -1, seed = 000000009b677bb7
+
+-------------------------------------------------
+[000000009b677bb7]
+artrees: 	FAIL(Invalid test data)
+>>>
+validation file is not determined or not correctcontext: test case = -1, seed = 000000009b677bb7
+
+-------------------------------------------------
+[000000009b677bb7]
+em: 	Ok
+-------------------------------------------------
+[000000009b677bb7]
+kmeans: 	Ok
+-------------------------------------------------
+[000000009b677bb7]
+knearest: 	Ok
+-------------------------------------------------
+[000000009b677bb7]
+slann: 	FAIL(Invalid test data)
+>>>
+validation file is not determined or not correctcontext: test case = -1, seed = 000000009b677bb7
+
+-------------------------------------------------
+[000000009b677bb7]
+slboost: 	FAIL(Invalid test data)
+>>>
+validation file is not determined or not correctcontext: test case = -1, seed = 000000009b677bb7
+
+-------------------------------------------------
+[000000009b677bb7]
+sldtree: 	FAIL(Invalid test data)
+>>>
+validation file is not determined or not correctcontext: test case = -1, seed = 000000009b677bb7
+
+-------------------------------------------------
+[000000009b677bb7]
+slertrees: 	FAIL(Invalid test data)
+>>>
+validation file is not determined or not correctcontext: test case = -1, seed = 000000009b677bb7
+
+-------------------------------------------------
+[000000009b677bb7]
+slnbayes: 	FAIL(Invalid test data)
+>>>
+validation file is not determined or not correctcontext: test case = -1, seed = 000000009b677bb7
+
+-------------------------------------------------
+[000000009b677bb7]
+slrtrees: 	FAIL(Invalid test data)
+>>>
+validation file is not determined or not correctcontext: test case = -1, seed = 000000009b677bb7
+
+-------------------------------------------------
+[000000009b677bb7]
+slsvm: 	FAIL(Invalid test data)
+>>>
+validation file is not determined or not correctcontext: test case = -1, seed = 000000009b677bb7
+
+=================================================
+Summary: 11 out of 14 tests failed
+Running time: 00:00:00

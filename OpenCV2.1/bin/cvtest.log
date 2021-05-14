@@ -1,0 +1,153 @@
+Engine: CxTest 0.1
+Execution Date & Time: 07/04/17 01:14:26
+Config File: (null)
+Tested Libraries: cxcore: 2.1.0
+Optimized Low-level Plugin's: 
+=================================================
+-------------------------------------------------
+MSER: Unable to open image mser/puzzle.png
+context: test case = -1, seed = 00000032e8c6e24d
+-------------------------------------------------
+calibrate-camera-artificial: 
+artificial corners
+0) Expected  [Fx Fy Cx Cy] = [300.613 303.575 332.760 238.913]
+0) Estimated [Fx Fy Cx Cy] = [300.613 303.575 332.760 238.913]
+0) DistCoeff exp=(0.66, 0.05, 0.0037, 0.0798 0.05)
+0) DistCoeff est=(0.66, 0.05, 0.0037, 0.0798 0.05)
+0) AbsError = [0.00000 0.00000 0.00000 0.00000 0.00000]
+0) Testing solvePnP...
+findChessboard corners
+0) Expected  [Fx Fy Cx Cy] = [300.613 303.575 332.760 238.913]
+0) Estimated [Fx Fy Cx Cy] = [301.759 304.682 332.461 238.672]
+0) DistCoeff exp=(0.66, 0.05, 0.0037, 0.0798 0.05)
+0) DistCoeff est=(0.67, 0.00, 0.0040, 0.0805 0.13)
+0) AbsError = [0.01201 0.04380 0.00027 0.00071 0.07393]
+0) Testing solvePnP...
+cornersSubPix corners
+0) Expected  [Fx Fy Cx Cy] = [300.613 303.575 332.760 238.913]
+0) Estimated [Fx Fy Cx Cy] = [300.361 303.350 332.282 238.645]
+0) DistCoeff exp=(0.66, 0.05, 0.0037, 0.0798 0.05)
+0) DistCoeff est=(0.66, 0.03, 0.0042, 0.0795 0.07)
+0) AbsError = [0.00289 0.01589 0.00052 0.00029 0.01831]
+0) Testing solvePnP...
+4quad corners
+0) Expected  [Fx Fy Cx Cy] = [300.613 303.575 332.760 238.913]
+0) Estimated [Fx Fy Cx Cy] = [299.343 302.814 331.590 239.487]
+0) DistCoeff exp=(0.66, 0.05, 0.0037, 0.0798 0.05)
+0) DistCoeff est=(0.68, -0.05, 0.0046, 0.0741 0.18)
+0) AbsError = [0.01755 0.10063 0.00095 0.00574 0.12604]
+0) Testing solvePnP...
+
+artificial corners
+1) Expected  [Fx Fy Cx Cy] = [302.158 304.326 312.967 238.757]
+1) Estimated [Fx Fy Cx Cy] = [302.158 304.326 312.967 238.757]
+1) DistCoeff exp=(0.51, 0.16, 0.0275, 0.0396 0.09)
+1) DistCoeff est=(0.51, 0.16, 0.0275, 0.0396 0.09)
+1) AbsError = [0.00000 0.00000 0.00000 0.00000 0.00000]
+1) Testing solvePnP...
+findChessboard corners
+1) Expected  [Fx Fy Cx Cy] = [302.158 304.326 312.967 238.757]
+1) Estimated [Fx Fy Cx Cy] = [301.308 303.395 312.557 238.536]
+1) DistCoeff exp=(0.51, 0.16, 0.0275, 0.0396 0.09)
+1) DistCoeff est=(0.51, 0.14, 0.0278, 0.0395 0.13)
+1) AbsError = [0.00184 0.02094 0.00026 0.00008 0.03654]
+1) Testing solvePnP...
+cornersSubPix corners
+1) Expected  [Fx Fy Cx Cy] = [302.158 304.326 312.967 238.757]
+1) Estimated [Fx Fy Cx Cy] = [302.317 304.484 312.606 238.283]
+1) DistCoeff exp=(0.51, 0.16, 0.0275, 0.0396 0.09)
+1) DistCoeff est=(0.51, 0.15, 0.0271, 0.0397 0.11)
+1) AbsError = [0.00037 0.00565 0.00043 0.00010 0.01350]
+1) Testing solvePnP...
+4quad corners
+1) Expected  [Fx Fy Cx Cy] = [302.158 304.326 312.967 238.757]
+1) Estimated [Fx Fy Cx Cy] = [301.285 303.619 313.394 239.620]
+1) DistCoeff exp=(0.51, 0.16, 0.0275, 0.0396 0.09)
+1) DistCoeff est=(0.50, 0.17, 0.0287, 0.0401 0.03)
+1) AbsError = [0.00415 0.01068 0.00113 0.00050 0.06666]
+1) Testing solvePnP...
+
+artificial corners
+2) Expected  [Fx Fy Cx Cy] = [296.067 295.420 328.605 248.069]
+2) Estimated [Fx Fy Cx Cy] = [296.067 295.420 328.605 248.069]
+2) DistCoeff exp=(0.62, 0.17, 0.0336, 0.0385 0.06)
+2) DistCoeff est=(0.62, 0.17, 0.0336, 0.0385 0.06)
+2) AbsError = [0.00000 0.00000 0.00000 0.00000 0.00000]
+2) Testing solvePnP...
+findChessboard corners
+2) Expected  [Fx Fy Cx Cy] = [296.067 295.420 328.605 248.069]
+2) Estimated [Fx Fy Cx Cy] = [296.761 296.206 327.902 247.861]
+2) DistCoeff exp=(0.62, 0.17, 0.0336, 0.0385 0.06)
+2) DistCoeff est=(0.62, 0.19, 0.0340, 0.0378 -0.03)
+2) AbsError = [0.00263 0.02242 0.00045 0.00065 0.09079]
+2) Testing solvePnP...
+cornersSubPix corners
+2) Expected  [Fx Fy Cx Cy] = [296.067 295.420 328.605 248.069]
+2) Estimated [Fx Fy Cx Cy] = [296.471 295.849 328.316 247.771]
+2) DistCoeff exp=(0.62, 0.17, 0.0336, 0.0385 0.06)
+2) DistCoeff est=(0.62, 0.16, 0.0339, 0.0389 0.08)
+2) AbsError = [0.00462 0.01068 0.00029 0.00040 0.01680]
+2) Testing solvePnP...
+4quad corners
+2) Expected  [Fx Fy Cx Cy] = [296.067 295.420 328.605 248.069]
+2) Estimated [Fx Fy Cx Cy] = [295.458 294.971 329.114 248.851]
+2) DistCoeff exp=(0.62, 0.17, 0.0336, 0.0385 0.06)
+2) DistCoeff est=(0.62, 0.10, 0.0352, 0.0389 0.17)
+2) AbsError = [0.00161 0.06683 0.00167 0.00038 0.10754]
+2) Testing solvePnP...
+-------------------------------------------------
+calibrate-camera-c: Could not open file with list of test files: ../tests/cv/testdata//cameracalibration/datafiles.txt
+context: test case = -1, seed = fc9b60163b30b511
+-------------------------------------------------
+calibrate-camera-cpp: Could not open file with list of test files: ../tests/cv/testdata//cameracalibration/datafiles.txt
+context: test case = -1, seed = fc9b60163b30b511
+-------------------------------------------------
+calibrate-stereo-c: The file ../tests/cv/testdata//stereo/case1/stereo_calib.txt can not be opened or has invalid content
+context: test case = -1, seed = fc9b60163b30b511
+-------------------------------------------------
+calibrate-stereo-cpp: The file ../tests/cv/testdata//stereo/case1/stereo_calib.txt can not be opened or has invalid content
+context: test case = -1, seed = fc9b60163b30b511
+-------------------------------------------------
+calonder: Unable to open train image calonder/baboon200.jpgcontext: test case = -1, seed = fc9b60163b30b511
+-------------------------------------------------
+cascade-detector: validation file is not determined or not correctcontext: test case = -1, seed = 260ce44fcae69695
+-------------------------------------------------
+chessboard-detector: Chess board corners not found
+
+Running batch chessboard_list.dat
+../tests/cv/testdata//cameracalibration/chessboard_list.dat can not be readed or is not valid
+fs.isOpened=0, board_list.empty=1, board_list.isSeq=0,board_list.size()=0
+
+Running batch chessboard_list_subpixel.dat
+../tests/cv/testdata//cameracalibration/chessboard_list_subpixel.dat can not be readed or is not valid
+fs.isOpened=0, board_list.empty=1, board_list.isSeq=0,board_list.size()=0
+context: test case = -1, seed = 260ce44fcae69695
+-------------------------------------------------
+chessboard-subpixel: Error after findChessboardCorners: 0.737320, after findCornerSubPix: 0.380787
+Error after findChessboardCorners: 0.649872, after findCornerSubPix: 0.411459
+Error after findChessboardCorners: 0.718907, after findCornerSubPix: 0.390112
+Error after findChessboardCorners: 0.600487, after findCornerSubPix: 0.388558
+Error after findChessboardCorners: 0.770756, after findCornerSubPix: 0.369797
+Error after findChessboardCorners: 0.596538, after findCornerSubPix: 0.453908
+Error after findChessboardCorners: 0.706952, after findCornerSubPix: 0.401705
+Error after findChessboardCorners: 0.844513, after findCornerSubPix: 0.445315
+Error after findChessboardCorners: 0.729110, after findCornerSubPix: 0.424886
+Error after findChessboardCorners: 0.629658, after findCornerSubPix: 0.394960
+Error after findChessboardCorners: 0.721966, after findCornerSubPix: 0.437417
+Error after findChessboardCorners: 0.674037, after findCornerSubPix: 0.414876
+Error after findChessboardCorners: 0.732776, after findCornerSubPix: 0.393931
+Error after findChessboardCorners: 0.662288, after findCornerSubPix: 0.406323
+Error after findChessboardCorners: 0.652322, after findCornerSubPix: 0.381672
+Error after findChessboardCorners: 0.924672, after findCornerSubPix: 0.408048
+Average error after findCornerSubpix: 0.406485
+-------------------------------------------------
+drawing_c: test image can not be readcontext: test case = -1, seed = 497a84dd19f90aca
+-------------------------------------------------
+drawing_cpp: test image can not be readcontext: test case = -1, seed = 497a84dd19f90aca
+-------------------------------------------------
+feature-detectors: context: test case = -1, seed = 497a84dd19f90aca
+-------------------------------------------------
+features-fast: 
+This application has requested the Runtime to terminate it in an unusual way.
+Please contact the application's support team for more information.
+context: test case = -1, seed = 1c74ef34a608351f

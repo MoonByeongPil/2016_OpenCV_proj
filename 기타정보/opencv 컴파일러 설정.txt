@@ -1,0 +1,1 @@
+-L"C:\opencv2.1.0\lib" -lxcore21 -lcvaux -lhighui -lml210

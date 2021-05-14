@@ -1,0 +1,227 @@
+Engine: CxTest 0.1
+Execution Date & Time: 07/04/17 01:14:26
+Config File: (null)
+Tested Libraries: cxcore: 2.1.0
+Optimized Low-level Plugin's: 
+=================================================
+-------------------------------------------------
+[00000032e8c6e24d]
+MSER: 	FAIL(No test data)
+>>>
+Unable to open image mser/puzzle.png
+context: test case = -1, seed = 00000032e8c6e24d
+
+-------------------------------------------------
+[00000032e8c6e24d]
+_3d-cvt-homogen: 	Ok
+-------------------------------------------------
+[fe4388f948cb27cf]
+_3d-epilines: 	Ok
+-------------------------------------------------
+[fcbcf99a2ecf4fc2]
+_3d-fundam: 	Ok
+-------------------------------------------------
+[4b924aa89613b71e]
+_3d-rodrigues: 	Ok
+-------------------------------------------------
+[15fffcc8c7cd918b]
+_3d-rodrigues-badarg: 	Ok
+-------------------------------------------------
+[15fffcc8c7cd918b]
+accum-acc: 	Ok
+-------------------------------------------------
+[52be6e52169f718a]
+accum-mulacc: 	Ok
+-------------------------------------------------
+[096063b82c9c2f49]
+accum-runavg: 	Ok
+-------------------------------------------------
+[0fb90bf3c63b3078]
+accum-squareacc: 	Ok
+-------------------------------------------------
+[43518dc1062a0270]
+algorithm-estimateAffine3D: 	Ok
+-------------------------------------------------
+[43518dc1062a0270]
+calibMatrixValues-c: 	Ok
+-------------------------------------------------
+[f8995e8bbffe8f14]
+calibMatrixValues-cpp: 	Ok
+-------------------------------------------------
+[fc9b60163b30b511]
+calibrate-camera-artificial: 	Ok
+-------------------------------------------------
+[fc9b60163b30b511]
+calibrate-camera-c: 	FAIL(No test data)
+>>>
+Could not open file with list of test files: ../tests/cv/testdata//cameracalibration/datafiles.txt
+context: test case = -1, seed = fc9b60163b30b511
+
+-------------------------------------------------
+[fc9b60163b30b511]
+calibrate-camera-c-badarg: 	Ok
+-------------------------------------------------
+[fc9b60163b30b511]
+calibrate-camera-cpp: 	FAIL(No test data)
+>>>
+Could not open file with list of test files: ../tests/cv/testdata//cameracalibration/datafiles.txt
+context: test case = -1, seed = fc9b60163b30b511
+
+-------------------------------------------------
+[fc9b60163b30b511]
+calibrate-stereo-c: 	FAIL(No test data)
+>>>
+The file ../tests/cv/testdata//stereo/case1/stereo_calib.txt can not be opened or has invalid content
+context: test case = -1, seed = fc9b60163b30b511
+
+-------------------------------------------------
+[fc9b60163b30b511]
+calibrate-stereo-cpp: 	FAIL(No test data)
+>>>
+The file ../tests/cv/testdata//stereo/case1/stereo_calib.txt can not be opened or has invalid content
+context: test case = -1, seed = fc9b60163b30b511
+
+-------------------------------------------------
+[fc9b60163b30b511]
+calonder: 	FAIL(No test data)
+>>>
+Unable to open train image calonder/baboon200.jpgcontext: test case = -1, seed = fc9b60163b30b511
+
+-------------------------------------------------
+[fc9b60163b30b511]
+canny: 	Ok
+-------------------------------------------------
+[260ce44fcae69695]
+cascade-detector: 	FAIL(Invalid test data)
+>>>
+validation file is not determined or not correctcontext: test case = -1, seed = 260ce44fcae69695
+
+-------------------------------------------------
+[260ce44fcae69695]
+chessboard-detector: 	FAIL(Bad accuracy)
+>>>
+Chess board corners not found
+
+Running batch chessboard_list.dat
+../tests/cv/testdata//cameracalibration/chessboard_list.dat can not be readed or is not valid
+fs.isOpened=0, board_list.empty=1, board_list.isSeq=0,board_list.size()=0
+
+Running batch chessboard_list_subpixel.dat
+../tests/cv/testdata//cameracalibration/chessboard_list_subpixel.dat can not be readed or is not valid
+fs.isOpened=0, board_list.empty=1, board_list.isSeq=0,board_list.size()=0
+context: test case = -1, seed = 260ce44fcae69695
+
+-------------------------------------------------
+[260ce44fcae69695]
+chessboard-detector-badarg: 	Ok
+-------------------------------------------------
+[260ce44fcae69695]
+chessboard-subpixel: 	Ok
+-------------------------------------------------
+[edae0a77f2c34a36]
+color-bayer: 	Ok
+-------------------------------------------------
+[2bc6d6639049c41c]
+color-gray: 	Ok
+-------------------------------------------------
+[0229115b5dfa3250]
+color-hls: 	Ok
+-------------------------------------------------
+[294acac567724e02]
+color-hsv: 	Ok
+-------------------------------------------------
+[53e6b664b8ba3086]
+color-lab: 	Ok
+-------------------------------------------------
+[128846203ffe294a]
+color-luv: 	Ok
+-------------------------------------------------
+[2b2561c853ce6c31]
+color-rgb: 	Ok
+-------------------------------------------------
+[0be34ce5e82427cd]
+color-xyz: 	Ok
+-------------------------------------------------
+[0e7d1e0e87da1485]
+color-ycc: 	Ok
+-------------------------------------------------
+[5119009e86ae4e0f]
+composeRT: 	Ok
+-------------------------------------------------
+[5119009e86ae4e0f]
+contour-approx: 	Ok
+-------------------------------------------------
+[0d7de3efa9429ab6]
+contour-find: 	Ok
+-------------------------------------------------
+[40c60344a96153cc]
+distrans: 	Ok
+-------------------------------------------------
+[497a84dd19f90aca]
+drawing_c: 	FAIL(Invalid test data)
+>>>
+test image can not be readcontext: test case = -1, seed = 497a84dd19f90aca
+
+-------------------------------------------------
+[497a84dd19f90aca]
+drawing_cpp: 	FAIL(Invalid test data)
+>>>
+test image can not be readcontext: test case = -1, seed = 497a84dd19f90aca
+
+-------------------------------------------------
+[497a84dd19f90aca]
+emd: 	Ok
+-------------------------------------------------
+[497a84dd19f90aca]
+feature-detectors: 	FAIL(Invalid test data)
+>>>
+context: test case = -1, seed = 497a84dd19f90aca
+
+-------------------------------------------------
+[497a84dd19f90aca]
+features-evalvec: 	Ok
+-------------------------------------------------
+[1c74ef34a608351f]
+features-fast: 	FAIL(Invalid test data)
+>>>
+context: test case = -1, seed = 1c74ef34a608351f
+
+-------------------------------------------------
+[1c74ef34a608351f]
+features-mineval: 	Ok
+-------------------------------------------------
+[002719f30d01f007]
+features-precorner: 	Ok
+-------------------------------------------------
+[3b5f4dcf275f0e20]
+filter-blur: 	Ok
+-------------------------------------------------
+[4ca0ba81485c0be3]
+filter-gaussian: 	Ok
+-------------------------------------------------
+[22ebb02441e04bfa]
+filter-generic: 	Ok
+-------------------------------------------------
+[127494decdbefbee]
+filter-laplace: 	Ok
+-------------------------------------------------
+[5b1dab7ef500e8cf]
+filter-median: 	Ok
+-------------------------------------------------
+[36bebc6e0a8417d2]
+filter-sobel: 	Ok
+-------------------------------------------------
+[2f305511f43b185a]
+flann_autotuned: 	Ok
+-------------------------------------------------
+[2f305511f43b185a]
+flann_composite: 	Ok
+-------------------------------------------------
+[2f305511f43b185a]
+flann_kdtree: 	Ok
+-------------------------------------------------
+[2f305511f43b185a]
+flann_kmeans: 	Ok
+-------------------------------------------------
+[2f305511f43b185a]
+flann_linear: 	Ok

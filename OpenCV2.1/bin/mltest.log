@@ -1,0 +1,31 @@
+Engine: CxTest 0.1
+Execution Date & Time: 10/31/16 13:24:05
+Config File: (null)
+Tested Libraries: cxcore: 2.1.0
+Optimized Low-level Plugin's: 
+=================================================
+-------------------------------------------------
+aboost: validation file is not determined or not correctcontext: test case = -1, seed = 000000009b677bb7
+-------------------------------------------------
+adtree: validation file is not determined or not correctcontext: test case = -1, seed = 000000009b677bb7
+-------------------------------------------------
+aertrees: validation file is not determined or not correctcontext: test case = -1, seed = 000000009b677bb7
+-------------------------------------------------
+artrees: validation file is not determined or not correctcontext: test case = -1, seed = 000000009b677bb7
+-------------------------------------------------
+slann: validation file is not determined or not correctcontext: test case = -1, seed = 000000009b677bb7
+-------------------------------------------------
+slboost: validation file is not determined or not correctcontext: test case = -1, seed = 000000009b677bb7
+-------------------------------------------------
+sldtree: validation file is not determined or not correctcontext: test case = -1, seed = 000000009b677bb7
+-------------------------------------------------
+slertrees: validation file is not determined or not correctcontext: test case = -1, seed = 000000009b677bb7
+-------------------------------------------------
+slnbayes: validation file is not determined or not correctcontext: test case = -1, seed = 000000009b677bb7
+-------------------------------------------------
+slrtrees: validation file is not determined or not correctcontext: test case = -1, seed = 000000009b677bb7
+-------------------------------------------------
+slsvm: validation file is not determined or not correctcontext: test case = -1, seed = 000000009b677bb7
+=================================================
+Summary: 11 out of 14 tests failed
+Running time: 00:00:00

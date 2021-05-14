@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>TISTORY</title>
+
+	<style type="text/css">
+		/* reset */
+		body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button{margin:0;padding:0}
+		fieldset,img{border:0 none}
+		dl,ul,ol,menu,li {list-style:none}
+		blockquote, q {quotes: none}
+		blockquote:before, blockquote:after,q:before, q:after {content:'';content:none}
+		input,select,textarea,button {vertical-align:middle}
+		input::-ms-clear {display:none}
+		button {border:0 none;background-color:transparent;cursor:pointer}
+		body {background:#fff}
+		body,th,td,input,select,textarea,button {font-size:12px;line-height:1.5;font-family:'Malgun Gothic','맑은 고딕',"돋움",dotum,sans-serif;color:#333} /* color값은 디자인가이드에 맞게사용 */
+		a {color:#333;text-decoration:none}
+		a:active, a:hover {text-decoration:underline}
+		a:active {background-color:transparent}
+		address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
+
+		/* global */
+		#daumIndex {overflow:hidden;position:absolute;left:-9999px;width:0;height:1px;margin:0;padding:0} /* 스킵네비게이션 */
+		.ir_pm {display:block;overflow:hidden;font-size:0px;line-height:0;text-indent:-9999px} /* 사용된 이미지내 의미있는 텍스트의 대체텍스트를 제공할때 */
+		.ir_wa {display:block;overflow:hidden;position:relative;width:100%;height:100%;z-index:-1} /* 중요한 이미지 대체텍스트로 이미지off시에도 대체 텍스트를 보여주고자 할때 */
+		.screen_out {display:block;overflow:hidden;position:absolute;left:-9999px;width:1px;height:1px;font-size:0;line-height:0;text-indent:-9999px} /* 대체텍스트가 아닌 접근성을 위한 숨김텍스트를 제공할때 */
+
+		.f_l {float:left}
+		.f_r {float:right}
+		.cl_b {clear:both;width:0;height:0;font-size:0;line-height:0}
+		.show {display:block}
+		.hide {display:none}
+		.tbl {border-collapse:collapse;border-spacing: 0}
+		.clear_g {display:block;overflow:visible;width:auto;clear:both;*zoom:1}
+		.clear_g:after {display:block;visibility:hidden;height:0;font-size:0;clear:both;content:''}
+		.fw_b {font-weight:bold}
+
+		/* 공통 */
+		.ico_comm {background:url(http://i1.daumcdn.net/cfs.tistory/static/top/ico_tistory_140623.png) no-repeat;vertical-align:top} /* 2014-06-23 수정 */
+		.btn_comm {overflow:hidden;font-size:0;line-height:0;background:url(http://i1.daumcdn.net/cfs.tistory/static/top/btn_tistory_140626.png) no-repeat 0 0;text-indent:-9999px} /* 2014-06-26 수정 */
+
+		.img_g {display:block}
+		.tbl {width:100%;border-collapse:collapse;border-spacing:0}
+
+		/* layout */
+		html {height:100%}
+		body {height:100%;background-color:#f1f1f1}
+		#daumWrap {position:relative;min-height:100%;width:100%}
+		#daumHead {position:absolute;left:0;top:0;z-index:10;width:178px;padding-left:42px;min-height:100%;background-color:#fff}
+		#daumContent {height:100%;padding-bottom:120px;margin-left:240px}
+		#cSub {width:100%}
+		.inner_topcontent {position:relative;z-index:100;width:925px;height:90px}
+		#mArticle {min-height:100%}
+		#daumFoot {position:absolute;left:0;bottom:0;z-index:10;width:100%}
+		.inner_footer {width:925px;padding:19px 0 30px;margin-left:240px;border-top:1px solid #e7e7e7;font-size:11px;line-height:13px;font-family:dotum, sans-serif;color:#919191;text-align:center} /* 2014-06-19 수정 */
+
+		/* 헤더 */
+		#daumHead h1 {display:block;padding:44px 0 0 5px;font-size:26px;line-height:26px;letter-spacing:-1px}
+		#daumServiceLogo {display:block;width:125px;height:25px;background:url(http://i1.daumcdn.net/cfs.tistory/static/top/gnb_tistory.gif) no-repeat 0 0}
+
+		/* 서브 공통 */
+		#daumContent {padding-bottom:146px;background-color:#fff}
+		#mArticle {width:820px;padding-left:60px}
+		.inner_topcontent .info_notice {padding:10px 0 0 68px;background-position:21px -450px}
+		.inner_footer {width:auto;padding-left:60px;border-color:#f1f1f1}
+		.inner_footer .info_service {width:820px}
+		.inner_footer .txt_copyright {width:820px}
+		.link_guide {top:708px}
+		#daumGnb .link_invite {margin-top:83px}
+		#cSub {border-bottom:1px solid #f1f1f1}
+
+		/* 티스토리 로그인 */
+		body {background-color:#fff}
+		#daumHead {position:relative;width:490px;height:43px;margin:0 auto;padding:75px 0 0;border-bottom:3px solid #666}
+		#daumHead h1 {padding:0}
+		#daumServiceLogo {width:125px;height:25px;margin-left:1px;background-position:0 0}
+		#daumContent {margin:0;padding:0}
+		#mArticle {width:490px;margin:0 auto;padding:0}
+		#daumFoot {position:static;width:490px;margin:0 auto}
+		.inner_footer {margin:0;padding:0;border-top-color:#efefef;color:#919191}
+		.inner_footer .txt_copyright {width:auto;padding:20px 0 20px}
+		.footer_tistory .link_daum {color:#919191}
+
+		/* 에러페이지 */
+		.wrap_error #daumHead {width:590px;height:32px;padding:88px 0 0;border-bottom:1px solid #585a5e}
+		.wrap_error #daumServiceLogo {float:left;width:93px;height:19px;background-position:-275px 0}
+		.wrap_error .link_customer {float:right;padding-right:6px;margin:14px 2px 0 0;font-size:11px;line-height:13px;font-family:dotum,sans-serif;color:#444;background-position:100% -848px;letter-spacing:-1px}
+		.wrap_error #mArticle {width:590px}
+		.wrap_error #daumFoot {width:590px}
+
+		.wrap_error .tit_error {font-size:18px;line-height:32px;color:#333;letter-spacing:-1px}
+		.wrap_error .tit_error .emph_error {font-weight:bold;color:#f1631b}
+		.wrap_error .desc_error {padding-top:15px;font-size:13px;line-height:24px;color:#919191;letter-spacing:-1px}
+		.cont_error {padding:140px 0 50px;background:url(http://i1.daumcdn.net/cfs.tistory/static/top/bg_error.gif) no-repeat 50% 50px;text-align:center}
+		.cont_error .link_home {display:inline-block;width:164px;height:30px;margin:45px auto 0;padding-top:14px;border:1px solid #dcdcdc;font-size:14px;line-height:17px;color:#737a84;background-color:#fff;letter-spacing:-1px}
+		.cont_error .link_home:hover {background-color:#fafafa;text-decoration:none}
+		.cont_error .link_prev {display:inline-block;width:81px;height:30px;margin:0 3px;padding-top:14px;border:1px solid #dcdcdc;font-size:14px;line-height:17px;color:#737a84;background-color:#fff;letter-spacing:-1px}
+		.cont_error .link_prev:hover {background-color:#fafafa;text-decoration:none}
+		.cont_error .link_prev .txt_prev {padding-left:15px;background-position:0 -921px;cursor:pointer}
+		.cont_error .wrap_btn {position:relative;padding-top:30px}
+		.cont_error .wrap_btn .link_home {margin:0 3px}
+		.cont_error .wrap_btn .link_more {position:absolute;top:44px;right:43px;height:14px;padding:0 10px 1px 0;border-bottom:1px solid #f8b18d;font-size:12px;line-height:15px;color:#f1631b;background-position:100% -420px;letter-spacing:-1px}
+		.cont_error .wrap_btn .link_more:hover {text-decoration:none}
+
+
+		.box_error {width:512px;padding:27px 29px 30px;margin:32px auto 0;font-size:13px;color:#919191;background-color:#fafafa;text-align:left;letter-spacing:-1px}
+		.box_error .info_error {line-height:24px}
+		.box_error .list_error {overflow:hidden;padding-top:14px;margin-top:15px;border-top:1px solid #e9e9e9;line-height:24px}
+		.box_error .list_error li {padding-left:10px;color:#333;background:url(http://i1.daumcdn.net/cfs.tistory/static/top/dot_error.gif) no-repeat 0 10px}
+		.box_error .list_error .tit_subject {float:left;width:72px;padding-left:10px;margin-top:4px;background-position:0 -889px}
+		.box_error .list_error .txt_subject {float:left}
+		.box_error .list_error .txt_bar {float:right;padding-right:7px;color:#333}
+		.box_error .list_error .desc_info {float:left;width:425px;margin-top:4px;color:#333}
+		.box_error .list_error .link_error {text-decoration:underline}
+		.box_error .list_bloginfo .tit_subject {width:85px}
+		.box_error .list_bloginfo .desc_info {width:410px}
+		.box_error .tit_subtitle {font-weight:normal;line-height:24px;color:#333}
+		.box_error .link_more {display:inline-block;height:14px;padding:0 10px 1px 0;margin-top:17px;border-bottom:1px solid #c0c0c0;font-size:12px;line-height:15px;color:#919191;background-position:100% -945px;letter-spacing:-1px}
+		.box_error .link_more:hover {text-decoration:none}
+		.box_error .link_find {color:#f1631b;text-decoration:underline}
+
+		.box_error2 {width:550px;padding:15px 10px;margin:30px auto 0;font-size:13px;line-height:24px;color:#919191;background-color:#fafafa;letter-spacing:-1px}
+		.box_error2 .link_more {text-decoration:underline}
+	</style>
+</head>
+
+
+<body>
+<div id="daumIndex">
+	<a href="#daumGnb">메뉴 바로가기</a>
+	<a href="#daumBody">본문 바로가기</a>
+</div>
+
+<div id="daumWrap" class="wrap_error">
+	<div id="daumHead" role="banner">
+		<h1>
+			<a href="http://www.tistory.com" id="daumServiceLogo"><span class="ir_wa">TISTORY</span></a>
+		</h1>
+		<a href="http://cs.daum.net/faq/173.html" class="ico_comm link_customer">고객센터</a>
+	</div>
+	<hr class="hide">
+	<div id="daumContent" role="main">
+		<div id="mArticle">
+			<h2 id="daumBody" class="screen_out">TISTORY 본문</h2>
+			<div class="cont_error"><h3 class="tit_error">
+				찾으시려는 웹페이지는 존재하지 않는 페이지입니다.
+			</h3>
+				<div class="box_error2">
+					입력하신 페이지 주소가 정확한지 다시 한번 확인해보시기 바랍니다.<br>
+					관련 문의 사항이 있으시면 <a href="http://cs.daum.net/faq/173.html" class="link_more">고객센터</a>로 문의해 주시기 바랍니다.
+				</div>
+				<div class="wrap_btn">
+					<a href="javascript:;" class="link_prev" onclick="window.history.back();"><span class="ico_comm txt_prev">이전</span></a><a href="http://www.tistory.com" class="link_home">티스토리 홈 바로가기</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<hr class="hide">
+	<div id="daumFoot" class="footer_tistory" role="contentinfo">
+		<div class="inner_footer">
+			<h2 class="screen_out">서비스 이용정보</h2>
+			<address class="txt_copyright">Copyright &copy; <a href="http://www.kakaocorp.com/" class="link_daum">Kakao Corp.</a> All rights reserved.</address>
+		</div>
+	</div>
+</div>
+</body>
+</html>

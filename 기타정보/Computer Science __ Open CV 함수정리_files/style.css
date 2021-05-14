@@ -1,0 +1,1944 @@
+@charset "utf-8";
+
+* {
+	margin:0;
+	padding:0;
+	border:0;
+	line-height:1.5;
+	font-family:돋움, Dotum, AppleGothic, sans-serif;
+}
+
+body {
+	background-color:/*@background-color*/#fff/*@*/;
+	background-image:/*@background-image*/url(images/bg.jpg)/*@*/;
+	background-repeat:/*@background-image-repeat*/repeat/*@*/;
+	background-position:/*@background-image-position*/ /*@*/;
+	font-size:12px;
+}
+
+a {
+	text-decoration:none;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
+
+/* 페이징 - 현재 페이지 */
+#paging span.selected {
+	color:#97212F;
+}
+
+#paging .no-more-prev {
+	padding-left:6px;
+	color:#999;
+}
+
+#paging .no-more-next {
+	padding-right:6px;
+	color:#999;
+}
+
+
+/* 카테고리 - 이미지 버튼 */
+.ib {
+	cursor:pointer;
+}
+
+/* 카테고리 - 트리 셀 */
+.branch3 {
+	cursor:pointer;
+}
+
+/* 카테고리 - 카테고리 옆 개수 스타일 */
+.c_cnt {
+	color:#97212F;
+}
+
+
+/* 달력 월 표시 */
+.cal_month {
+	font:0.95em Verdana, Helvetica, Arial, Gulim, sans-serif;
+	height:18px;
+}
+
+/* 달력 요일 표시(th 영역) */
+.cal_week1 {
+	font:0.95em Dotum, Arial, sans-serif;
+	height:18px;
+	font-weight:normal;
+}
+
+/* 달력 일요일 표시(th 영역) */
+.cal_week2 {
+	font:0.95em Dotum, Arial, sans-serif;
+}
+
+/* 달력 Week(tr 영역) */
+.cal_week {}
+
+.cal_current_week {}
+
+/* 달력 Day(td 영역) */
+#calendar .cal_day {
+	color:#B4B4B4;
+	font:10px/15px verdana;
+	text-align:left;
+}
+
+/* 달력 Day, 일요일 (td 영역) */
+#calendar .cal_day_sunday {
+	color:#D3BB91;
+	font-weight:bold;
+}
+
+#calendar .cal_day_sunday a {
+	color:#D3BB91;
+	font-weight:bold;
+	text-decoration:underline;
+}
+
+/* 달력 지난 달 날짜 표시(td)  */
+.cal_day1 {
+	display:none;
+	color:#ccc;
+}
+
+/* 달력 다음 달 날짜 표시(td)  */
+.cal_day2 {
+	color:#ccc;
+}
+
+/* 달력 이번 달 날짜 표시(td) */
+.cal_day3 {
+	color:#666;
+}
+
+/* 달력 오늘 날짜 표시(td) */
+#calendar .tt-calendar td.cal_day4 {
+	color:#97212F;
+	font-weight:bold;
+}
+
+#calendar .tt-calendar td.cal_day4	a {}
+
+/* 달력 글쓴 날 링크 스타일 */
+	a.cal_click {
+	text-decoration:underline;
+}
+
+	a.cal_click:visited {
+	text-decoration:underline;
+}
+
+	a.cal_click:hover {
+	text-decoration:underline;
+}
+
+
+/* 종류별 코멘트 [##_rp_rep_class_##] */
+.rp_general {}
+
+.rp_secret {
+	color:#f30;
+}
+
+/* 종류별 방명록 글 [##_guest_rep_class_##] */
+.guest_general {}
+
+
+/* 비밀 댓글 */
+.hiddenComment {
+	background:url(images/iconSecret.gif) no-repeat;
+	padding-left:20px;
+	font-weight:normal;
+}
+
+
+/* 이미지 아래 캡션 스타일 */
+.cap1 {
+	color:#999;
+	text-align:center;
+	padding:4px 0;
+	margin:0;
+}
+
+/* 그림 */
+.imageblock {
+	margin:5px 0;
+}
+
+/* 왼쪽 */
+.left {}
+
+/* 가운데 */
+.center {}
+
+/* 오른쪽 */
+.right {}
+
+/* 그림 2개 배치 */
+.dual {
+	margin-bottom:5px;
+}
+
+/* 그림 3개 배치 */
+.triple {
+	margin-bottom:5px;
+}
+
+
+/* 본문 - more / less */
+.moreless_fold,
+.moreless_top,
+.moreless_bottom {
+	width:/*@post-width*/650px/*@*/;
+	color:#404040;
+	font:11px dotum;
+}
+
+.moreless_fold {
+	height:22px;
+	padding-top:5px;
+	_background-image:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/iconMore.png', sizingMethod='crop');
+}
+
+.moreless_fold span {
+	padding:4px 0 0 90px;
+	background:url(images/iconMore.png) no-repeat left top;
+	display:block;
+	height:27px;
+}
+
+.moreless_top {
+	height:18px;
+	padding-top:5px;
+	_background-image:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/iconLess.png', sizingMethod='crop');
+}
+
+.moreless_top span {
+	background:url(images/iconLess.png) no-repeat left top;
+	padding:4px 0 0 58px;
+	display:block;
+	height:23px;
+}
+
+.moreless_content {
+	margin:10px 0;
+}
+
+.moreless_bottom {
+	height:20px;
+	padding-top:3px;
+	_background-image:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/iconLess2.png', sizingMethod='crop');
+}
+
+.moreless_bottom span {
+	background:url(images/iconLess.png) no-repeat left top;
+	padding:4px 0 0 58px;
+	display:block;
+	height:23px;
+}
+
+
+/* 키워드 */
+.key1 {
+	cursor: pointer;
+	border-bottom: 1px dotted #ccc;
+}
+
+hr {
+	display:none;
+}
+
+img {
+	border:0;
+}
+
+/* 태그 */
+#taglog ul,
+#tagbox ul {
+	text-align:justify;
+}
+
+#counter li,
+#blogMenu li,
+#tagbox li,
+#taglog li {
+	display:inline;
+}
+
+#blogMenu li,
+#sidebar li,
+#searchList li,
+#searchRplist li,
+#guestList li,
+.trackback li,
+.keylog li,
+.commentList li {
+	list-style-type:none;
+}
+
+
+/* 포스트 본문 마크업 */
+.article ol,
+.article ul,
+.article il {
+	padding-left:25px;
+}
+
+.article dt {
+	padding-top:5px;
+	text-decoration:underline;
+}
+
+.article dd {
+	padding-left:25px;
+	padding-bottom:5px;
+}
+
+.dual table td,
+.triple table td {
+	background-color:transparent;
+}
+
+.author {
+	clear:both;
+}
+
+
+/* PNG24 관련 링크 버그 */
+#blogMenu a,
+#localog .info a,
+.control a,
+.actionTrail a,
+.moreless_fold span,
+.moreless_top span,
+.moreless_bottom span {
+	position:relative;
+	cursor:pointer;
+}
+
+
+/* 블로그 레이아웃 */
+#container {
+	width:/*@post-width:330*/980px/*@*/;
+	margin:0 auto;
+}
+
+#content {
+	float:left;
+	width:/*@post-width*/650px/*@*/;
+	overflow:hidden;
+	word-break:break-all;
+}
+
+#sidebar {
+	float:right;
+	width:290px;
+	margin-top:10px;
+	overflow:hidden;
+	word-break:break-all;
+}
+
+#footer {
+	clear:both;
+	padding:40px 0;
+}
+
+
+/* 해더 */
+#header {
+	height:/*@title-height*/60px/*@*/;
+	padding-top:13px;
+	background-color:/*@title-background-color*/ /*@*/;
+	background-image:/*@title-background-image*/ /*@*/;
+	background-repeat:/*@title-background-image-repeat*/ /*@*/;
+	background-position:/*@title-background-image-position*/ /*@*/;
+}
+
+#header h1 a {
+	background-color:/*@title-background-color*/ /*@*/;
+	color:/*@title-color*/#060606/*@*/;
+	font-weight:normal;
+	font-size:/*@title-font-size*/25px/*@*/;
+	font-family:/*@title-font-family*/dotum, verdana/*@*/;
+	letter-spacing:-1px;
+}
+
+
+/* 메뉴 */
+#blogMenu {
+	height:32px;
+	margin-bottom:29px;
+	background-repeat:no-repeat;
+}
+
+#blogMenu ul li {
+	float:left;
+}
+
+#blogMenu a {
+	height:32px;
+	margin-right:22px;
+	display:block;
+	text-indent:-5000px;
+	overflow:hidden;
+	cursor:pointer;
+	position:relative;
+}
+
+.tab_home a {
+	width:60px;
+	background-image:url(images/tab_home.png);
+}
+
+.tab_tag a {
+	width:45px;
+	background-image:url(images/tab_tag.png);
+}
+
+.tab_media a {
+	width:74px;
+	background-image:url(images/tab_media.png);
+}
+
+.tab_key a {
+	width:70px;
+	background-image:url(images/tab_key.png);
+}
+
+.tab_location a {
+	width:87px;
+	background-image:url(images/tab_location.png);
+}
+
+.tab_guestbook a {
+	width:67px;
+	background-image:url(images/tab_guestbook.png);
+}
+
+.tab_admin a {
+	width:58px;
+	margin-left:28px;
+	background-image:url(images/tab_admin.png);
+}
+
+.tab_write a {
+	width:48px;
+	margin-left:28px;
+	background-image:url(images/tab_write.png);
+}
+
+*html .tab_home a {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/tab_home.png', sizingMethod='crop');
+}
+
+*html .tab_tag a {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/tab_tag.png', sizingMethod='crop');
+}
+
+*html .tab_media a {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/tab_media.png', sizingMethod='crop');
+}
+
+*html .tab_key a {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/tab_key.png', sizingMethod='crop');
+}
+
+*html .tab_location a {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/tab_location.png', sizingMethod='crop');
+}
+
+*html .tab_guestbook a {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/tab_guestbook.png', sizingMethod='crop');
+}
+
+*html .tab_admin a {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/tab_admin.png', sizingMethod='crop');
+}
+
+*html .tab_write a {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/tab_write.png', sizingMethod='crop');
+}
+
+#tt-body-page .tab_home a {
+	background-image:url(images/tab_home_on.png);
+}
+
+#tt-body-tag .tab_tag a {
+	background-image:url(images/tab_tag_on.png);
+}
+
+#tt-body-media .tab_media a {
+	background-image:url(images/tab_media_on.png);
+}
+
+#tt-body-keylog .tab_key a {
+	background-image:url(images/tab_key_on.png);
+}
+
+#tt-body-location .tab_location a {
+	background-image:url(images/tab_location_on.png);
+}
+
+#tt-body-guestbook .tab_guestbook a {
+	background-image:url(images/tab_guestbook_on.png);
+}
+
+
+*html #tt-body-page .tab_home a {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/tab_home_on.png', sizingMethod='crop');
+}
+
+*html #tt-body-tag .tab_tag a {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/tab_tag_on.png', sizingMethod='crop');
+}
+
+*html #tt-body-media .tab_media a {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/tab_media_on.png', sizingMethod='crop');
+}
+
+*html #tt-body-keylog .tab_key a {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/tab_key_on.png', sizingMethod='crop');
+}
+
+*html #tt-body-location .tab_location a {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/tab_location_on.png', sizingMethod='crop');
+}
+
+*html #tt-body-guestbook .tab_guestbook a {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/tab_guestbook_on.png', sizingMethod='crop');
+}
+
+
+
+/* 컨텐츠 */
+/* 지역로그 */
+#localog h3 {
+	padding-top:19px;
+	padding-bottom:25px;
+	background:url(images/line.gif) no-repeat 0 0;
+}
+
+#localog h3 span {
+	display:block;
+	width:122px;
+	height:23px;
+	background:url(images/title_location.png) no-repeat;
+	text-indent:-1000px;
+	overflow:hidden;
+}
+
+*html #localog h3 span {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/title_location.png', sizingMethod='crop');
+}
+
+
+#localog .spot {
+	height:20px;
+	padding-left:17px;
+	background:url(images/iconIndentArrow_local.png) no-repeat;
+	color:#636363;
+	font:12px/20px dotum, sans-serif;
+}
+
+#localog .info {
+	height:20px;
+	padding-left:12px;
+	background:url(images/iconIndentArrow_localinfo.png) no-repeat;
+}
+
+#localog .info a {
+	color:#97212F;
+	font:12px/20px dotum, sans-serif;
+}
+
+
+*html #localog .spot {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/iconIndentArrow_local.png', sizingMethod='crop');
+}
+
+*html #localog .info {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/iconIndentArrow_localinfo.png', sizingMethod='crop');
+}
+
+/* 태그로그 */
+#taglog h3 {
+	padding-top:19px;
+	padding-bottom:14px;
+	background:url(images/line.gif) no-repeat 0 0;
+}
+
+#taglog h3 span {
+	display:block;
+	width:52px;
+	height:31px;
+	background:url(images/title_tag.png) no-repeat;
+	text-indent:-1000px;
+	overflow:hidden;
+}
+
+*html #taglog h3 span {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/title_tag.png', sizingMethod='crop');
+}
+
+
+#taglog li {
+	font:12px/25px dotum;
+	vertical-align:middle;
+}
+
+#taglog li .cloud1 {
+	background-color:#97212F;
+	color:#FAF9F9 !important;
+	font-weight:bold;
+	font-size:15px;
+}
+
+#taglog li .cloud2 {
+	color:#97212F;
+	font-weight:bold;
+	font-size:15px;
+}
+
+#taglog li .cloud3 {
+	background-color:#636363;
+	color:#F4F4F5;
+	font-weight:bold;
+	 
+}
+
+#taglog li .cloud4 {
+	color:#636363;
+	font-weight:bold;
+}
+
+#taglog li .cloud5 {
+	color:#999;
+}
+
+
+/* 방명록&댓글 */
+#guestbook h3 {
+	padding-top:19px;
+	padding-bottom:21px;
+	background:url(images/line.gif) no-repeat 0 0;
+}
+
+#guestbook h3 span {
+	display:block;
+	width:90px;
+	height:31px;
+	background:url(images/title_guestbook.png) no-repeat;
+	text-indent:-1000px;
+	overflow:hidden;
+}
+
+*html #guestbook h3 span {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/title_guestbook.png', sizingMethod='crop');
+}
+
+.comment h3 {
+	display:none;
+}
+
+/* 방명록&댓글 쓰기 */
+.commentWrite {
+	padding-bottom:20px;
+}
+
+#guestWrite .write-wrap,
+.commentWrite .write-wrap {
+	padding:7px 10px 9px 10px;
+	border:1px solid #D5D5D5;
+	background-color:#FAFAFA;
+}
+
+#guestWrite .info-write,
+.commentWrite .info-write {
+	width:628px;
+	height:22px;
+	border-bottom:1px solid #D5D5D5;
+}
+
+
+#guestWrite input,
+#guestWrite label {
+	vertical-align:middle;
+}
+
+
+#guestWrite .name input.text,
+.commentWrite .name input.text {
+	width:90px;
+}
+
+#guestWrite .password input.text,
+.commentWrite .password input.text {
+	width:91px;
+}
+
+#guestWrite .homepage input.text,
+.commentWrite .homepage input.text {
+	width:/*@post-width:-305*/345px/*@*/;
+}
+
+
+#guestWrite .info-write label,
+.commentWrite .info-write label {
+	display:block;
+	float:left;
+	background-repeat:no-repeat;
+	background-position:0 4px;
+	font-size:18px;
+	line-height:18px;
+	text-indent:-5000px;
+	overflow:hidden;
+}
+
+#guestWrite .info-write input,
+.commentWrite .info-write input {
+	float:left;
+}
+
+#guestWrite .name label,
+.commentWrite .name label {
+	width:34px;
+	margin-right:5px;
+	background-image:url(images/txt_name.png);
+}
+
+#guestWrite .password label,
+.commentWrite .password label {
+	width:20px;
+	margin:0 5px;
+	background-image:url(images/txt_password.png);
+}
+
+#guestWrite .homepage label,
+.commentWrite .homepage label {
+	width:23px;
+	margin:0 5px;
+	background-image:url(images/txt_homepage.png);
+}
+
+.secretWrap {
+	height:21px;
+	padding-top:2px;
+}
+
+.secretWrap label {
+	padding-left:42px;
+	background:url(images/txt_secret.gif) no-repeat 0 4px;
+}
+
+.secretWrap label span {
+	display:none;
+}
+
+*html #guestWrite .name label, *html .commentWrite .name label {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/txt_name.png', sizingMethod='crop');
+}
+
+*html #guestWrite .password label, *html .commentWrite .password label {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/txt_password.png', sizingMethod='crop');
+}
+
+*html #guestWrite .homepage label, *html .commentWrite .homepage label {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/txt_homepage.png', sizingMethod='crop');
+}
+
+input.text {
+	height:18px;
+	background-color:transparent;
+	color:#222;
+	line-height:14px;
+}
+
+textarea {
+	width:/*@post-width:-32*/618px/*@*/;
+	height:76px;
+	padding:5px;
+	background-color:#DFE0E0;
+	color:#222;
+	font-size:11px;
+}
+
+#guestWrite p.button,
+.commentWrite p.button {
+	width:/*@post-width*/650px/*@*/;
+}
+
+p.button {
+	margin-top:4px;
+	text-align:right;
+}
+
+p.button input.submit {
+	width:89px;
+	height:14px;
+	background:url(images/btn_write.png) no-repeat;
+	text-indent:-5000px;
+	vertical-align:top;
+	overflow:hidden;
+	cursor:pointer;
+}
+
+*html p.button input.submit {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/btn_write.png', sizingMethod='crop');
+}
+
+
+/* 방명록&댓글 읽기 */
+#guestList {
+	padding-top:20px;
+}
+
+#guestList .floatWrapper,
+.commentList .floatWrapper {
+	width:/*@post-width*/650px/*@*/;
+}
+
+#guestList li,
+.commentList li {
+	padding-top:8px;
+	border-top:1px solid #B1B3A6;
+}
+
+#guestList li,
+.commentList li,
+#guestList li a,
+.commentList li a {
+	font-family:dotum;
+	font-size:11px;
+	line-height:19px;
+}
+
+#guestList .name,
+.commentList .name,
+#guestList .name a,
+.commentList .name a {
+	color:#222;
+	font-weight:bold;
+	font-size:12px;
+}
+
+#guestList .date,
+.commentList .date {
+	color:#989898;
+}
+
+#guestList p,
+.commentList p {
+	padding-bottom:10px;
+	color:#636363;
+}
+
+#guestList ul li .floatWrapper,
+.commentList ul li .floatWrapper {
+	width:/*@post-width:-22*/628px/*@*/;
+}
+
+#guestList ul li,
+.commentList ul li {
+	width:/*@post-width:-22*/628px/*@*/;
+	padding-left:22px;
+	background:url(images/iconIndentArrow_re.png) no-repeat;
+}
+
+*html #guestList ul li, *html .commentList ul li {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/iconIndentArrow_re.png', sizingMethod='crop');
+}
+
+.control {
+	float:right;
+}
+
+.control a {
+	display:block;
+	float:right;
+	height:14px;
+	font-size:14px;
+	line-height:14px;
+	text-decoration:none;
+	text-indent:-5000px;
+	overflow:hidden;
+}
+
+.control a.address {
+	width:61px;
+	background:url(images/iconAddress.png) no-repeat;
+}
+
+.control a.modify {
+	width:71px;
+	background:url(images/iconModify.png) no-repeat;
+}
+
+.control a.write {
+	width:61px;
+	background:url(images/iconWrite.png) no-repeat;
+}
+
+*html .control a.address {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/iconAddress.png', sizingMethod='crop');
+}
+
+*html .control a.modify {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/iconModify.png', sizingMethod='crop');
+}
+
+*html .control a.write {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/iconWrite.png', sizingMethod='crop');
+}
+
+
+/* 검색결과 */
+#searchList,
+#searchRplist {
+	background:url(images/line.gif) repeat-x left top;
+	padding-top:6px;
+	padding-bottom:3px;
+}
+
+#searchList h3,
+#searchRplist h3 {
+	width:/*@post-width:-10*/640px/*@*/;
+	height:17px;
+	margin-bottom:7px;
+	padding-top:4px;
+	padding-left:10px;
+	background:url(images/bg_actionTrail.png) no-repeat right top;
+	color:#97212F;
+	font:12px dotum;
+}
+
+*html #searchList h3, *html #searchRplist h3 {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/bg_actionTrail.png', sizingMethod='scale');
+}
+
+#searchList li,
+#searchRplist li {
+	clear:both;
+	width:/*@post-width*/650px/*@*/;
+	padding-top:2px;
+}
+
+#searchList li,
+#searchRplist li,
+#searchList li a ,
+#searchRplist li a {
+	color:#636363;
+	font:12px/16px dotum;
+}
+
+#searchList li a ,
+#searchRplist li a {
+	display:block;
+	height:16px;
+	padding-top:2px;
+	padding-left:23px;
+	background:url(images/iconList.png) no-repeat;
+}
+
+#searchList li a:visited ,
+#searchRplist li a:visited {
+	background:url(images/iconChecked.png) no-repeat;
+}
+
+#searchList li a ,
+#searchRplist li a,
+#searchList .cnt,
+#searchRplist .cnt,
+#searchList .name,
+#searchRplist .name {
+	float:left;
+}
+
+#searchList .date,
+#searchRplist .date {
+	float:right;
+}
+
+*html #searchList li a, *html #searchRplist li a {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/iconList.png', sizingMethod='crop');
+}
+
+*html #searchList li a:visited, *html #searchRplist li a:visited {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/iconChecked.png', sizingMethod='crop');
+}
+
+
+/* 보호글 */
+.entryProtected p.floatWrapper {
+	padding-top:10px;
+	padding-bottom:24px;
+}
+
+.entryProtected label,
+.entryProtected input {
+	float:left;
+	vertical-align:middle;
+}
+
+.entryProtected label {
+	display:block;
+	width:60px;
+	height:18px;
+	background:url(images/txt_protected.png) no-repeat;
+	text-indent:-5000px;
+	overflow:hidden;
+}
+
+.entryProtected input.text {
+	height:18px;
+	margin-right:5px;
+	border:1px solid #DFE0E0;
+	background-color:#fff;
+	color:#222;
+}
+
+.entryProtected input.submit {
+	width:67px;
+	height:25px;
+	background:url(images/btn_confirm.png) no-repeat;
+	text-indent:-5000px;
+	overflow:hidden;
+}
+
+*html .entryProtected label {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/txt_protected.png', sizingMethod='crop');
+}
+
+*html .entryProtected input.submit {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/btn_confirm.png', sizingMethod='crop');
+}
+
+
+/* 포스트 타이틀영역 */
+.month-01,
+.month-02,
+.month-03,
+.month-04,
+.month-05,
+.month-06,
+.month-07,
+.month-08,
+.month-09,
+.month-10,
+.month-11,
+.month-12 {
+	width:43px;
+	height:15px;
+	background-repeat:no-repeat;
+}
+
+.month-01 {
+	background-image:url(./images/month01.png);
+	_background-image:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/month01.png', sizingMethod='crop');
+}
+
+.month-02 {
+	background-image:url(./images/month02.png);
+	_background-image:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/month02.png', sizingMethod='crop');
+
+}
+
+.month-03 {
+	background-image:url(./images/month03.png);
+	_background-image:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/month03.png', sizingMethod='crop');
+
+}
+
+.month-04 {
+	background-image:url(./images/month04.png);
+	_background-image:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/month04.png', sizingMethod='crop');
+
+}
+
+.month-05 {
+	background-image:url(./images/month05.png);
+	_background-image:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/month05.png', sizingMethod='crop');
+
+}
+
+.month-06 {
+	background-image:url(./images/month06.png);
+	_background-image:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/month06.png', sizingMethod='crop');
+
+}
+
+.month-07 {
+	background-image:url(./images/month07.png);
+	_background-image:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/month07.png', sizingMethod='crop');
+}
+
+.month-08 {
+	background-image:url(./images/month08.png);
+	_background-image:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/month08.png', sizingMethod='crop');
+}
+
+.month-09 {
+	background-image:url(./images/month09.png);
+	_background-image:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/month09.png', sizingMethod='crop');
+}
+
+.month-10 {
+	background-image:url(./images/month10.png);
+	_background-image:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/month10.png', sizingMethod='crop');
+}
+
+.month-11 {
+	background-image:url(./images/month11.png);
+	_background-image:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/month11.png', sizingMethod='crop');
+}
+
+.month-12 {
+	background-image:url(./images/month12.png);
+	_background-image:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/month12.png', sizingMethod='crop');
+}
+
+
+/* 포스트 */
+.titleWrap h2 a {
+	color:/*@post-title-color*/#222/*@*/;
+	font-size:/*@post-title-font-size*/20px/*@*/;
+	font-family:/*@post-title-font-family*/dotum/*@*/;
+	line-height:26px;
+}
+
+.article {
+	width:/*@post-width*/650px/*@*/;
+	padding-top:27px;
+	color:/*@post-body-color*/#636363/*@*/;
+	font-size:/*@post-body-font-size*/12px/*@*/;
+	font-family:/*@post-body-font-family*/dotum/*@*/;
+	word-break:break-all;
+	word-wrap:break-word;
+	overflow:hidden;
+}
+
+.article a {
+	color:#404040;
+}
+
+.author {
+	padding:8px 0 4px 0;
+	color:#B1B3A6;
+	font:12px dotum;
+	text-align:right;
+}
+
+
+/* 포스트 타이틀영역 */
+.titleWrap {
+	width:/*@post-width*/650px/*@*/;
+	padding-top:35px;
+	background:url(./images/line.gif) repeat-x left top;
+}
+
+.titleWrap .dateImg {
+	float:left;
+	width:66px;
+	height:68px;
+	margin-right:12px;
+	background:url(./images/bg_date.png) no-repeat;
+	color:#222;
+	font:bold 23px/23px verdana;
+	text-align:center;
+}
+
+.titleWrap .dateImg img {
+	margin-top:11px;
+}
+
+.titleWrap .imgdate {
+	display:none;	
+}
+
+.titleWrap .title-right {
+	float:left;
+	width:/*@post-width:-83*/567px/*@*/;
+	padding-top:10px;
+}
+
+.titleWrap .category,
+.titleWrap .category a {
+	color:#636363;
+	font:12px/18px dotum;
+}
+
+.titleWrap .admin,
+.titleWrap .admin a {
+	color:#999;
+	font:11px/14px verdana;
+}
+
+.titleWrap .admin span,
+.titleWrap .admin  span a {
+	font:11px/14px dotum;
+}
+
+
+*html .titleWrap .dateImg {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/bg_date.png', sizingMethod='crop');
+}
+
+
+/* 이미지 */
+.imageblock img {
+	border:1px solid #000;
+}
+
+
+/* 인용문 */
+.article blockquote {
+	width:/*@post-width*/650px/*@*/;
+	min-height:46px;
+	_height:46px;
+	margin:5px 0;
+	padding-left:50px;
+	background:url(images/iconBlockquote.png) no-repeat;
+}
+
+*html .article blockquote {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/iconBlockquote.png', sizingMethod='crop');
+}
+
+
+/* 태그 트레일 */
+.tagTrail {
+	width:/*@post-width*/650px/*@*/;
+}
+
+.tagHead {
+	display:block;
+	float:left;
+	width:62px;
+	margin-right:4px;
+	height:30px;
+	background:url(images/txt_tag.png) no-repeat;
+	text-indent:-5000px;
+	overflow:hidden;
+}
+
+.tagText {
+	float:left;
+	width:/*@post-width:-69*/581px/*@*/;
+	padding-top:8px;
+}
+
+.tagText,
+.tagText a {
+	color:#222;
+	font:12px dotum;
+}
+
+*html .tagHead {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/txt_tag.png', sizingMethod='crop');
+}
+
+
+/* 액션 트레일 */
+.actionTrail {
+	margin-top:5px;
+}
+
+.actionTrail,
+.actionTrail a,
+.actionTrail a span {/* 폰트 지정시 필수 */
+	color:#97212F;
+	font:bold 15px/20px dotum;
+}
+
+.actionTrail {
+	width:/*@post-width*/650px/*@*/;
+	height:21px;
+	background:url(images/bg_actionTrail.png) no-repeat left top;
+}
+
+.actionTrail .tb,
+.actionTrail .rp {
+	float:left;
+	display:block;
+	height:20px;
+	background-repeat:no-repeat;
+}
+
+.actionTrail .tb {
+	margin-left:8px;
+	padding-left:45px;
+	background-image:url(images/txt_trackback.png);
+}
+
+.actionTrail .rp {
+	margin-left:25px;
+	padding-left:30px;
+	background-image:url(images/txt_comment.png);
+}
+
+.actionTrail .txt {
+	display:none;
+}
+
+*html .actionTrail {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/bg_actionTrail.png', sizingMethod='scale');
+}
+
+*html .actionTrail .tb {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/txt_trackback.png', sizingMethod='crop');
+}
+
+*html .actionTrail .rp {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/txt_comment.png', sizingMethod='crop');
+}
+
+
+/* 트랙백 */
+.trackback h3 {
+	padding-top:7px;
+	padding-bottom:6px;
+	border-bottom:1px solid #B1B3A6;
+}
+
+.trackback h3 span {
+	color:#636363;
+	font:11px/11px dotum;
+}
+
+.trackback h3 span.txt {
+	display:none;
+}
+
+
+.trackback ol {
+	margin-top:-1px;
+}
+
+.trackback ol li {
+	width:/*@post-width*/650px/*@*/;
+	padding-top:8px;
+	border-top:1px solid #B1B3A6;
+}
+
+.trackback h4 {
+	margin-right:40px;
+}
+
+.trackback h4 a {
+	color:#222;
+	font:bold 12px/19px dotum;
+}
+
+.trackback .date,
+.trackback .from {
+	color:#989898;
+	font:11px/19px verdana;
+}
+
+.trackback .name {
+	font-family:dotum;
+}
+
+.trackback p {
+	padding-bottom:10px;
+	color:#636363;
+	font:11px/19px dotum;
+}
+
+.trackback a.delete {
+	float:right;
+	display:block;
+	width:37px;
+	height:11px;
+	background:url(images/iconDelete.png) no-repeat;
+	text-indent:-5000px;
+	overflow:hidden;
+}
+
+*html .trackback a.delete {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/iconDelete.png', sizingMethod='crop');
+}
+
+
+/* 페이지 */
+#paging {
+	margin-top:22px;
+}
+
+#paging a,
+#paging a img {
+	vertical-align:middle;
+}
+
+#paging .numbox a {
+	padding-left:2px;
+	padding-right:3px;
+}
+
+#paging {
+	text-align:center;
+}
+
+#paging span,
+#paging span a {
+	color:#636363;
+	font:bold 11px verdana;
+}
+
+
+/* 푸터 */
+#footMenu,
+#footMenu a {
+	color:#222;
+	font:11px verdana;
+}
+
+#copyright {
+	padding-top:10px;
+}
+
+#copyright,
+#copyright a {
+	color:#B6B5B6;
+	font:9px verdana;
+}
+
+
+/* 사이드바 */
+#searchBox {
+	width:285px;
+	height:19px;
+	padding-left:5px;
+	background-color:#636363;
+}
+
+#searchBox label,
+#searchBox input {
+	vertical-align:middle;
+}
+
+#searchBox label {
+	padding-left:48px;
+	height:17px;
+	background:url(images/txt_search.gif) no-repeat;
+}
+
+#searchBox label span {
+	display:none;
+}
+
+#searchBox input.text {
+	width:185px;
+	height:14px;
+	padding-top:2px;
+	color:#fff;
+	font:12px/17px;
+}
+
+#searchBox input.submit {
+	width:40px;
+	height:17px;
+	background:url(images/btn_search.gif) no-repeat;
+	text-indent:-5000px;
+	overflow:hidden;
+	cursor:pointer;
+}
+
+#counter {
+	padding-top:7px;
+	padding-bottom:8px;
+}
+
+#counter li {
+	margin-right:8px;
+	color:#636363;
+	font:11px verdana;
+	text-transform:lowercase;
+}
+
+#counter li span {
+	color:#97212F;
+}
+
+.bloger-top,
+.bloger-mid,
+.bloger-btm {
+	width:290px;
+}
+
+.bloger-top,
+.bloger-btm {
+	height:3px;
+	font-size:0;
+	background-repeat:no-repeat;
+}
+
+.bloger-top {
+	background-image:url(images/bloger_top.gif);
+}
+
+.bloger-mid {
+	padding:10px 0;
+	background:url(images/bloger_mid.gif) repeat-y;
+}
+
+.bloger-btm {
+	background-image:url(images/bloger_btm.gif);
+}
+
+.bloger-left {
+	float:left;
+	width:128px;
+	padding-left:15px;
+}
+
+#blogImage {
+	float:right;
+	padding-right:15px;
+}
+
+#blogImage img {
+	width:120px;
+}
+
+#blogDesc {
+	padding-bottom:15px;
+	color:#636363;
+	font:12px/18px dotum;
+}
+
+#userID {
+	width:128px;
+	padding-top:16px;
+	background:url(images/iconBy.png) no-repeat;
+	color:#999;
+	font:12px/18px dotum;
+}
+
+*html #userID {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/iconBy.png', sizingMethod='crop');
+}
+
+
+/* 사이드바 타이틀 */
+#sidebar .module_widget h3,
+#sidebar .module_plugin h3 {
+	margin:30px 0 5px;
+	color:#222;
+	font:bold 14px dotum;
+}
+
+h3.stit {
+	text-indent:-5000px;
+	overflow:hidden;
+}
+
+#category h3 {
+	width:73px;
+	height:25px;
+	margin-top:30px;
+	background:url(images/stit_category.png) no-repeat;
+}
+
+#notice h3 {
+	width:72px;
+	height:35px;
+	background:url(images/stit_notice.png) no-repeat;
+}
+
+#recentPost h3 {
+	width:94px;
+	height:35px;
+	background:url(images/stit_recentpost.png) no-repeat;
+}
+
+#recentComment h3 {
+	width:77px;
+	height:35px;
+	margin-bottom:3px;
+	background:url(images/stit_recentcomment.png) no-repeat;
+}
+
+#recentTrackback h3 {
+	width:97px;
+	height:35px;
+	margin-bottom:3px;
+	background:url(images/stit_recenttrackback.png) no-repeat;
+}
+
+#link h3 {
+	width:36px;
+	height:35px;
+	background:url(images/stit_link.png) no-repeat;
+}
+
+#archive h3 {
+	width:74px;
+	height:35px;
+	background:url(images/stit_archive.png) no-repeat;
+}
+
+
+*html #category h3 {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/stit_category.png', sizingMethod='crop');
+}
+
+*html #notice h3 {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/stit_notice.png', sizingMethod='crop');
+}
+
+*html #recentPost h3 {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/stit_recentpost.png', sizingMethod='crop');
+}
+
+*html #recentComment h3 {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/stit_recentcomment.png', sizingMethod='crop');
+}
+
+*html #recentTrackback h3 {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/stit_recenttrackback.png', sizingMethod='crop');
+}
+
+*html #link h3 {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/stit_link.png', sizingMethod='crop');
+}
+
+*html #archive h3 {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/stit_archive.png', sizingMethod='crop');
+}
+
+
+/* 사이드바 리스트 */
+.sbar-list {
+	padding-bottom:28px;
+}
+
+.sbar-list li,
+.sbar-list li a,
+#archive li,
+#archive li a,
+#sidebar .module_widget li,
+#sidebar .module_widget li a,
+#sidebar .module_plugin li,
+#sidebar .module_plugin li a {
+	color:#636363;
+	font:12px/18px dotum;
+}
+
+.sbar-list li {
+	width:282px;
+	padding-left:8px;
+	padding-bottom:2px;
+	background:url(images/bull.png) no-repeat;
+}
+
+.sbar-list li .cnt,
+#archive li .cnt {
+	color:#97212F;
+}
+
+*html .sbar-list li {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/bull.png', sizingMethod='crop');
+}
+
+#archive li {
+	float:left;
+	display:block;
+	width:96px;
+	padding-bottom:2px;
+}
+
+.line-dot {
+	width:290px;
+	height:3px;
+	background:url(images/line_dot.png) no-repeat;
+	font-size:0;
+}
+
+*html .line-dot {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/line_dot.png', sizingMethod='crop');
+}
+
+
+/* 카테고리 */
+/*1depth*/
+#category ul {
+	border-bottom:1px solid #888983;
+}
+
+#category ul li {
+	padding:1px 0 1px 0;
+	border-top:1px solid #888983;
+}
+
+#category ul li a {
+	color:#636363;
+	font:12px/18px dotum;
+}
+
+#category ul li a:hover {
+	color:#97212F;
+	text-decoration:none;
+}
+
+/*2depth*/
+#category ul li ul {
+	margin:0;
+	border-bottom:0;
+}
+
+/*3depth*/
+#category ul li ul li ul {
+	margin:0;
+	border-bottom:0;
+}
+
+#category ul li ul li ul li {
+	border-top:0;
+}
+
+#category ul li ul li ul li a {
+	display:block;
+	width:162px;
+	padding-left:28px;
+	background:url(images/iconDepth3.png) no-repeat;
+}
+
+#category ul li ul li ul li a:hover {
+	background:url(images/iconDepth3on.png) no-repeat;
+}
+
+*html #category ul li ul li ul li a {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/iconDepth3.png', sizingMethod='crop');
+}
+
+*html #category ul li ul li ul li a:hover {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/iconDepth3on.png', sizingMethod='crop');
+}
+
+
+/*태그박스*/
+#tagbox {
+	padding-top:27px;
+	padding-bottom:13px;
+}
+
+#tagbox h3 {
+	display:none;
+}
+
+#tagbox li,
+#tagbox li a {
+	color:#636363;
+	font:12px/20px dotum, sans-serif;
+}
+
+#taglog li .cloud1,
+#taglog li .cloud2 {
+	color:#97212F;
+}
+
+#taglog li .cloud3,
+#taglog li .cloud4 {
+	font-weight:bold;
+}
+
+
+#tagbox li .cloud1,
+#tagbox li .cloud2 {
+	color:#97212F;
+}
+
+#tagbox li .cloud3,
+#tagbox li .cloud4 {
+	font-weight:bold;
+}
+
+
+/* 공지사항 */
+#notice {
+	padding-top:30px;
+}
+
+
+/* 글보관함 */
+#archive {
+	padding-bottom:24px;
+}
+
+
+/* 달력 */
+#calendar {
+	width:288px;
+	margin-top:20px;
+	padding:12px 0;
+	border:1px solid #D0D0D0;
+	background-color:#FAFAFA;
+}
+
+#calendar .caption {
+	float:left;
+	width:102px;
+	margin-right:10px;
+	background-color:#ECECEC;
+}
+
+#calendar .caption .this {
+	display:block;
+	height:43px;
+	padding-top:24px;
+	color:#2F2F2F;
+	font:bold 20px/20px dotum;
+	text-align:center;
+}
+
+#calendar .caption .prev {
+	background:url(images/btn_prev.gif) no-repeat;
+	padding:0 0 0 47px;
+	font-size:15px;
+	line-height:15px;
+	text-decoration:none;
+}
+
+#calendar .caption .next {
+	background:url(images/btn_next.gif) no-repeat;
+	padding:0 0 0 45px;
+	font-size:15px;
+	line-height:15px;
+	text-decoration:none;
+}
+
+#calendar .caption span {
+	display:none;
+}
+
+#calendar .tt-calendar {
+	float:left;
+	width:170px;
+}
+
+#calendar .tt-calendar th,
+#calendar .tt-calendar td,
+#calendar .tt-calendar td a {
+	color:#999;
+	font:11px/13px dotum;
+	text-align:center;
+}
+
+
+/* 배너 */
+.banner {
+	padding:17px 0;
+}
+
+#adTistory,
+#btnRSS {
+	display:block;
+	float:left;
+	text-indent:-5000px;
+	overflow:hidden;
+}
+
+#adTistory {
+	width:120px;
+	height:17px;
+	margin-left:1px;
+	background:url(images/tistory.png) no-repeat 0 0;
+}
+
+#btnRSS {
+	width:70px;
+	height:13px;
+	margin-top:5px;
+	margin-left:15px;
+	background:url(images/rss.png) no-repeat 0 0;
+}
+
+*html #adTistory {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/tistory.png', sizingMethod='crop');
+}
+
+*html #btnRSS {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://cfs.tistory.com/blog/skin/tis_Transparent_White/images/rss.png', sizingMethod='crop');
+}
+
+.floatWrapper {
+	display: inline-block;
+}
+
+
+/* PNG24 IE6 hack */
+.png24 {
+	tmp:expression(setPng24(this));
+}
